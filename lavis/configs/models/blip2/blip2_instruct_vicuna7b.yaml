@@ -5,11 +5,11 @@
 
 model:
   arch: instruct_vicuna7b
-  load_finetuned: False
+  load_finetuned: True
   load_pretrained: True
 
   pretrained: "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth"
-  finetuned: ""
+  finetuned: "saved_model/ActivityNet_qa/checkpoint_best.pth"
 
   # vit encoder
   image_size: 224
